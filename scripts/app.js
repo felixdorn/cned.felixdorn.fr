@@ -28,9 +28,9 @@ const loadLinks = (search) => {
             const link = links[name]
             const el = document.createElement('div')
 
-            el.innerHTML = `<a href="${link}" class="flex justify-between items-start rounded-lg p-4 transition ease-in-out duration-150 bg-gray-800 border-t border-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 focus:ring-offset-gray-800 focus:outline-none">
+            el.innerHTML = `<a href="${link}" class="flex justify-between items-start sm:items-stretch rounded-lg p-4 transition ease-in-out duration-150 bg-gray-800 border-t border-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 focus:ring-offset-gray-800 focus:outline-none">
                 <div class="flex flex-col">
-                    <p class="font-semibold">${name}</p>
+                    <p class="font-semibold select-none">${name}</p>
                     <p class="text-gray-400 hover:underline text-xs sm:text-base">${link}</p>
                 </div>
                 <button type="button"
@@ -41,7 +41,6 @@ const loadLinks = (search) => {
 
             container.appendChild(el)
         })
-
 
         loader.classList.toggle('hidden')
         container.classList.toggle('hidden')

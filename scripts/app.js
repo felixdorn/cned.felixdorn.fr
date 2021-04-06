@@ -28,7 +28,7 @@ const loadLinks = (search) => {
             const link = links[name]
             const el = document.createElement('div')
 
-            el.innerHTML = `<a href="${link}" class="bg-gray-800  p-4 rounded-lg border border-gray-700 flex justify-between">
+            el.innerHTML = `<a href="${link}" class="bg-gray-800  p-4 rounded-lg border shadow-lg border-gray-700 flex justify-between">
                 <div class="flex flex-col">
                     <p class="font-semibold">${name}</p>
                     <p class="text-gray-400 hover:underline">${link}</p>
